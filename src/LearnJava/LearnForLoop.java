@@ -2,12 +2,13 @@ package LearnJava;
 
 public class LearnForLoop {
 	public static void main(String[] args) {
-		// 1 to 100
-//		         1        2      4
-		for (int i = 1; i < 10; i+=2) {
-//			initialization  ; condition ; by what number you want to increase i
-//			    3 
-			System.out.println(i);
+		for (int i = 1; i <= 10; i++) {
+			if (i == 6) {
+				break; // for breaking a for loop
+			} else if (i == 2) {
+				continue; // for skipping something in your loop
+			}
+			System.out.println("8 * " + i + " = " + i * 8);
 		}
 	}
 }
