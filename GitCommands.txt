@@ -1,0 +1,141 @@
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/poona/eclipse-workspace/LearnJava_SN/.git/
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ ^[[200~
+bash: $'\E[200~': command not found
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git config --global user.name "bharadiya"
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git config --global user.email "shashank.bharadiya@gmail.com"
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote add origin https://github.com/bharadiya/LearnJava_Sandhya.git
+error: remote origin already exists.
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote -v
+origin  https://github.com/bharadiya/LearnJava_SN.git (fetch)
+origin  https://github.com/bharadiya/LearnJava_SN.git (push)
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote rm origin
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote -v
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote add myRemote https://github.com/bharadiya/LearnJava_Sandhya.git
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git remote -v
+myRemote        https://github.com/bharadiya/LearnJava_Sandhya.git (fetch)
+myRemote        https://github.com/bharadiya/LearnJava_Sandhya.git (push)
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bin/LearnJava/CheckNumberIsEven.class
+        modified:   bin/LearnJava/HelloWorld.class
+        modified:   bin/LearnJava/LearnArrays.class
+        modified:   bin/LearnJava/LearnForLoop.class
+        modified:   src/LearnJava/CheckNumberIsEven.java
+        modified:   src/LearnJava/HelloWorld.java
+        modified:   src/LearnJava/LearnArrays.java
+        modified:   src/LearnJava/LearnForLoop.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/.gitignore
+        src/LearnJava/Addition.java
+        src/LearnJava/AdditonofDigits.java
+        src/LearnJava/ConcatOperator.java
+        src/LearnJava/LearnAndOR.java
+        src/LearnJava/LearnIf.java
+        src/LearnJava/LearnOperators.java
+        src/LearnJava/LogicalOperators.java
+        src/LearnJava/LogicalOperatorsOr.java
+        src/LearnJava/MethodDay1.java
+        src/LearnJava/MethodDay2.java
+        src/LearnJava/PrintOddNumbers.java
+        src/OOPS/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git add .
+warning: in the working copy of 'bin/.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bin/.gitignore
+        modified:   bin/LearnJava/CheckNumberIsEven.class
+        modified:   bin/LearnJava/HelloWorld.class
+        modified:   bin/LearnJava/LearnArrays.class
+        modified:   bin/LearnJava/LearnForLoop.class
+        new file:   src/LearnJava/Addition.java
+        new file:   src/LearnJava/AdditonofDigits.java
+        modified:   src/LearnJava/CheckNumberIsEven.java
+        new file:   src/LearnJava/ConcatOperator.java
+        modified:   src/LearnJava/HelloWorld.java
+        new file:   src/LearnJava/LearnAndOR.java
+        modified:   src/LearnJava/LearnArrays.java
+        modified:   src/LearnJava/LearnForLoop.java
+        new file:   src/LearnJava/LearnIf.java
+        new file:   src/LearnJava/LearnOperators.java
+        new file:   src/LearnJava/LogicalOperators.java
+        new file:   src/LearnJava/LogicalOperatorsOr.java
+        new file:   src/LearnJava/MethodDay1.java
+        new file:   src/LearnJava/MethodDay2.java
+        new file:   src/LearnJava/PrintOddNumbers.java
+        new file:   src/OOPS/Demo.java
+        new file:   src/OOPS/LearnInheritance.java
+
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git commit -m "03082024_Day1 Code"
+[master 25e99d6] 03082024_Day1 Code
+ 22 files changed, 289 insertions(+), 31 deletions(-)
+ create mode 100644 bin/.gitignore
+ create mode 100644 src/LearnJava/Addition.java
+ create mode 100644 src/LearnJava/AdditonofDigits.java
+ create mode 100644 src/LearnJava/ConcatOperator.java
+ create mode 100644 src/LearnJava/LearnAndOR.java
+ create mode 100644 src/LearnJava/LearnIf.java
+ create mode 100644 src/LearnJava/LearnOperators.java
+ create mode 100644 src/LearnJava/LogicalOperators.java
+ create mode 100644 src/LearnJava/LogicalOperatorsOr.java
+ create mode 100644 src/LearnJava/MethodDay1.java
+ create mode 100644 src/LearnJava/MethodDay2.java
+ create mode 100644 src/LearnJava/PrintOddNumbers.java
+ create mode 100644 src/OOPS/Demo.java
+ create mode 100644 src/OOPS/LearnInheritance.java
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$ git push myRemote master
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (52/52), 10.66 KiB | 909.00 KiB/s, done.
+Total 52 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/bharadiya/LearnJava_Sandhya.git
+ * [new branch]      master -> master
+
+poona@HpPoonam MINGW64 ~/eclipse-workspace/LearnJava_SN (master)
+$
