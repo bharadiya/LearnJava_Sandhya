@@ -1,4 +1,4 @@
-package PatternPrograms;
+package ForLoopPrograms;
 
 import java.util.Scanner;
 
